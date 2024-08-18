@@ -1,15 +1,17 @@
+@import url("/home/marco/.config/colors.css");
+
 * {
     border: none;
-    border-radius: 0;
-    font-family: JetBrainsMono Nerd Font, monospace;
+    border-radius: 10px;
+    font-family: Noto Sans Mono;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
+    color: @color3;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    background: rgba(0, 0, 0, 0);
 }
 
 #workspaces button {
@@ -25,24 +27,20 @@ window#waybar {
 #workspaces button.focused {
     color: #a6adc8;
     background: #eba0ac;
-    border-radius: 10px;
 }
 
 #workspaces button.urgent {
     color: #11111b;
     background: #a6e3a1;
-    border-radius: 10px;
 }
 
 #workspaces button:hover {
     background: #cdd6f4;
     color: #11111b; 
-    border-radius: 10px;
 }
 
 tooltip {
-    border-radius: 10px;
-    background-color: #1E1E2E;
+    background-color: @color1;
 }
 
 #window,
@@ -53,7 +51,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #1e1e2e;
+    background: @color1;
     padding: 0px 10px;
     margin: 1px 0px;
     margin-top: 8px;
@@ -66,43 +64,37 @@ tooltip {
 }
 
 #tray {
-    border-radius: 10px;
     margin-right: 8px;
 }
 
 #workspaces {
-    background: #1e1e2e;
-    border-radius: 10px;
     padding-left: 8px;
     padding-right: 4px;
 }
 
 #window {
-    border-radius: 10px;
     margin-left: 8px;
     margin-right: 4px;
 }
 
 #clock {
-    color: #a6adc8;
     border-radius: 0px 10px 10px 0px;
     margin-right: 8px;
 }
 
 #network {
-    color:  #a6adc8;
+    border-radius: 0px;
     padding-right: 10px;
 
 }
 
 #pulseaudio {
-    color: #a6adc8;
+    border-radius: 0px;
     padding-left: 1px;
     padding-right: 5px;
 }
 
 #battery {
-    color:#a6adc8;
     border-radius: 0px 0px 0px 0px;
     padding-right: 4px;
 }
