@@ -98,3 +98,9 @@ tooltip {
     border-radius: 0px 0px 0px 0px;
     padding-right: 4px;
 }
+
+#battery.critical {
+  color: red;
+} 
+
+

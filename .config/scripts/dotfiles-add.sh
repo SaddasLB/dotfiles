@@ -10,5 +10,4 @@
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/scripts
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/waybar/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/wofi/style.css
-/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/Pictures/wallpapers/wallpaper2.jpg
-
+/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/Pictures/wallpapers/
