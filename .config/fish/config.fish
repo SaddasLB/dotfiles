@@ -16,5 +16,6 @@ if status is-interactive
 
     # Git Bare
     alias dotfiles='/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME"'
+    alias dotadd='~/.config/scripts/dotfiles-add.sh'
 
 end
