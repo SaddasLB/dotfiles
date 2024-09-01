@@ -21,7 +21,9 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    background: @color2;
+    border-radius: 10;
+    opacity: 1;
 }
 
 #workspaces button.focused {
@@ -70,6 +72,7 @@ tooltip {
 #workspaces {
     padding-left: 8px;
     padding-right: 4px;
+    border-radius: 10;
 }
 
 #window {
