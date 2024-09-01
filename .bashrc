@@ -15,14 +15,14 @@ alias ll='ls -la --color=auto'
 alias grubdate='sudo mount /dev/nvme1n1p1 /mnt && sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 ### Files Shortcuts ###
-alias hyprconf='sudo nvim ~/.config/hypr/hyprland.conf'
-alias aliases='sudo nvim ~/.bashrc'
-alias issues='sudo nvim ~/Documents/issues.txt'
+alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+alias aliases='nvim ~/.bashrc'
+alias issues='nvim ~/Documents/issues.txt'
 
-# Macros
-alias cleanfetch='clear && fastfetch'
-alias ds='env XDG_SESSION_TYPE=x11 discord'
+# QOL
+alias fetch='fastfetch'
 
 # Git Bare
 alias dotfiles='/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME"'
+alias dotadd='~/.config/scripts/dotfiles-add.sh'
 
