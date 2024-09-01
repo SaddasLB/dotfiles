@@ -100,7 +100,9 @@ tooltip {
 }
 
 #battery.critical {
-  color: red;
+  color: #FF6F00;
 } 
 
-
+#battery.charging {
+  color: #bb8cba;
+}
