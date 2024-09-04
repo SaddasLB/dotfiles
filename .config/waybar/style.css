@@ -20,10 +20,8 @@ window#waybar {
     margin-right: 5px;
 }
 
-#workspaces button.active {
-    background: @color2;
-    border-radius: 10;
-    opacity: 1;
+#workspaces button.active label {
+    color: @color2;
 }
 
 #workspaces button.focused {

@@ -23,4 +23,7 @@ if status is-interactive
     alias dotfiles='/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME"'
     alias dotadd='~/.config/scripts/dotfiles-add.sh'
 
+    # SSH
+    alias kssh='kitty +kitten ssh'
+
 end
