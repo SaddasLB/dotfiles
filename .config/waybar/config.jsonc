@@ -13,8 +13,8 @@
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
-	"backlight",
 	"network",
+	"backlight",
 	"pulseaudio",
   "battery",
 	"clock"

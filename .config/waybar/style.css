@@ -1,46 +1,21 @@
 @import url("../colors.css");
 
 * {
-    border: none;
+  * border: none;
     border-radius: 10px;
     font-family: Noto Sans Mono;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
-    color: @color3;
+    color: @secondary;
+}
+
+tooltip {
+    background-color: @primary;
 }
 
 window#waybar {
     background: rgba(0, 0, 0, 0);
-}
-
-#workspaces button {
-    padding: 5px;
-    color: #555869;
-    margin-right: 5px;
-}
-
-#workspaces button.active label {
-    color: @color2;
-}
-
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-}
-
-#workspaces button:hover {
-    background: #cdd6f4;
-    color: #11111b; 
-}
-
-tooltip {
-    background-color: @color1;
 }
 
 #window,
@@ -51,26 +26,10 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: @color1;
+    background: @primary;
     padding: 0px 10px;
     margin: 1px 0px;
     margin-top: 8px;
-}
-
-#backlight {
-    border-radius: 10px 0px 0px 10px;
-    padding-right: 10px;
-    padding-left: 12px;
-}
-
-#tray {
-    margin-right: 8px;
-}
-
-#workspaces {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 10;
 }
 
 #window {
@@ -78,21 +37,37 @@ tooltip {
     margin-right: 4px;
 }
 
-#clock {
-    border-radius: 0px 10px 10px 0px;
+#workspaces {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10;
+}
+
+#workspaces button.active label {
+    color: @accent;
+}
+
+#workspaces button:hover {
+    background: @highlight;
+}
+
+#tray {
     margin-right: 8px;
 }
 
 #network {
-    border-radius: 0px;
-    padding-right: 10px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 8px;
+    padding-left: 12px;
+}
 
+#backlight {
+    border-radius: 0px 0px 0px 0px;
 }
 
 #pulseaudio {
     border-radius: 0px;
-    padding-left: 1px;
-    padding-right: 5px;
+    padding-right: 4px;
 }
 
 #battery {
@@ -101,9 +76,14 @@ tooltip {
 }
 
 #battery.critical {
-  color: #FF6F00;
+  color: @alert;
 } 
 
 #battery.charging {
-  color: #bb8cba;
+  color: @accent;
+}
+
+#clock {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 8px;
 }
