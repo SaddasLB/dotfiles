@@ -1,7 +1,6 @@
 @import url("../colors.css");
 
 * {
-  * border: none;
     border-radius: 10px;
     font-family: Noto Sans Mono;
     font-weight: bold;
