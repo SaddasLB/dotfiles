@@ -23,7 +23,10 @@ if status is-interactive
     alias dotfiles='/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME"'
     alias dotadd='~/.config/scripts/dotfiles-add.sh'
 
-    # SSH
+    # Kitty
     alias kssh='kitty +kitten ssh'
+    alias icat='kitty +kitten icat'
+
+    set -Ux RANGER_LOAD_DEFAULT_RC false
 
 end

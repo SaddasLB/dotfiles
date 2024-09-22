@@ -1,3 +1,4 @@
+default-timeout=15000
 background-color=#1E1E2EFF
 text-color=#A6ADC8
 width=255

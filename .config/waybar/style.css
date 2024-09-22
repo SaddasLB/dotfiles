@@ -1,4 +1,5 @@
-@import url("../colors.css");
+@import "../colors.css";
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
     border-radius: 10px;
@@ -6,11 +7,11 @@
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
-    color: @secondary;
+    color: @color1;
 }
 
 tooltip {
-    background-color: @primary;
+    background-color: @background;
 }
 
 window#waybar {
@@ -25,7 +26,7 @@ window#waybar {
 #workspaces,
 #tray,
 #backlight {
-    background: @primary;
+    background: @background;
     padding: 0px 10px;
     margin: 1px 0px;
     margin-top: 8px;
@@ -43,11 +44,11 @@ window#waybar {
 }
 
 #workspaces button.active label {
-    color: @accent;
+    color: @color6;
 }
 
 #workspaces button:hover {
-    background: @highlight;
+    background: @foreground;
 }
 
 #tray {
@@ -79,7 +80,7 @@ window#waybar {
 } 
 
 #battery.charging {
-  color: @accent;
+  color: @color6;
 }
 
 #clock {

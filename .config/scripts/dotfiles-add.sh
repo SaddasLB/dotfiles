@@ -8,6 +8,7 @@
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/keepassxc/keepassxc.ini
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/kitty/kitty.conf
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/mako/config
+/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/ranger/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/scripts
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/waybar/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/wofi/style.css

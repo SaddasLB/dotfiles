@@ -1,11 +1,13 @@
+@import ".cache/wal/colors-waybar.css";
+
 window {
 font-family: Noto Sans Mono;
 font-weight: bold;
-background-color: #1E1E2E;
+background-color: @background;
 border-radius: 4;
 border-top-left-radius: 10;
 border-top-right-radius: 10;
-color: #808080;
+color: @cursor;
 }
 
 entry-icon {
@@ -13,8 +15,8 @@ opacity:0;
 }
 
 #input{
-background-color: #1E1E2E;
-color: white;
+background-color: @background;
+color: @color1;
 margin: 10;
 margin-bottom:0;
 border:0;
@@ -22,7 +24,6 @@ border:0;
 
 #input:focus {
 box-shadow:none;
-border-color:#514756;
 }
 
 #inner-box{
@@ -31,14 +32,15 @@ margin: 8;
 
 #text{
 margin: 10;
-}
-
-#entry{
-text-color:#808080;
+color: @color1;
 }
 
 #entry:selected{
 outline: none;
-background-color: #1E1E2E;
+background-color: @background;
 opacity: 1;
+}
+
+#entry:selected #text {
+color: @color6;
 }
