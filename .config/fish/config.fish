@@ -1,7 +1,5 @@
 if status is-interactive
   
-  source "$HOME/.cache/wal/colors.fish"
-  
   function fish_greeting
     echo \n
   end
