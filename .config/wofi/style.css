@@ -4,6 +4,7 @@ window {
 font-family: Noto Sans Mono;
 font-weight: bold;
 background-color: @background;
+opacity: 0.95;
 border-radius: 4;
 border-top-left-radius: 10;
 border-top-right-radius: 10;
