@@ -26,11 +26,8 @@ if status is-interactive
     # Kitty
     alias kssh='kitty +kitten ssh'
     alias icat='kitty +kitten icat'
-    
-    # Wallpaper swap
-    alias wallpaperone='hyprctl hyprpaper preload "~/Pictures/wallpapers/wallpaper.jpg" && hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/wallpaper.jpg" && wal -i ~/Pictures/wallpapers/wallpaper.jpg'
 
-    alias wallpapertwo='hyprctl hyprpaper preload "~/Pictures/wallpapers/wallpaper2.jpg" && hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/wallpaper2.jpg" && wal -i ~/Pictures/wallpapers/wallpaper2.jpg'
+
 
     set -Ux RANGER_LOAD_DEFAULT_RC false
 
