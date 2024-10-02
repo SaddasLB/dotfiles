@@ -14,7 +14,7 @@ super+shift+number -> move selected window to target workspace super+shift+s -> 
 
 super+f -> fullscreen super+shift+f -> borderless fullscreen
 
-packages: nano-syntax-highlighting
+packages: nano-syntax-highlighting hypridle hyprlock
 
 setting default browser:
 xdg-settings set default-web-browser firefox.desktop
