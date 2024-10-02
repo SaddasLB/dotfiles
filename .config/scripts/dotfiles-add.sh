@@ -7,7 +7,7 @@
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/hypr/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/keepassxc/keepassxc.ini
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/kitty/kitty.conf
-/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/mako/config
+/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/mako
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/nano/nanorc
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/ranger/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/scripts

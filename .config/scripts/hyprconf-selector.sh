@@ -21,16 +21,22 @@ shift $((OPTIND -1))
 
 # set fetching directory
 DIR="$HOME/.config/hypr/xcfg/"  # Puoi cambiare questo percorso
-
+XCFG_DIR="$HOME./config/hypr"
 # list directory files
 FILES=$(ls -1 "$DIR")
 
+# list second directory files
+XCFG_FILES=$(ls -1 "$XCFG_DIR")
+
 # convert list to array
-FILE_ARRAY=($FILES)
+FILE_ARRAY=($FILES, $XCFG_FILES)
 
 # shows numbered list
 echo -e "\n-----------------------------------------\n\nScegli un file da aprire:"
 for i in "${!FILE_ARRAY[@]}"; do
+    if [[ $FILE_ARRAY[@] -eq "xcfg"]]; then
+      break      
+    fi
     echo "$((i+1))) ${FILE_ARRAY[$i]}"
 done
 

@@ -119,6 +119,13 @@ else
   echo "ERROR: pywal update failed"
 fi
 
+# Update mako
+#log_message "Updating mako"
+echo -e "Updating mako\n"
+$HOME/.config/mako/update-theme.sh 
+
+# Uncomment to test notification colours
+#notify-send "Script Notification Test"
 
 #log_message "Script completed"
 echo -e "\n--- SCRIPT ENDED ---"
