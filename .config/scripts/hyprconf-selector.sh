@@ -34,7 +34,7 @@ FILE_ARRAY=($FILES, $XCFG_FILES)
 # shows numbered list
 echo -e "\n-----------------------------------------\n\nScegli un file da aprire:"
 for i in "${!FILE_ARRAY[@]}"; do
-    if [[ $FILE_ARRAY[@] -eq "xcfg"]]; then
+    if [[ $FILE_ARRAY[@] -eq "xcfg"]] then
       break      
     fi
     echo "$((i+1))) ${FILE_ARRAY[$i]}"

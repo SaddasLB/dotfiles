@@ -37,6 +37,7 @@ super+ctrl+m -> exit hyprland
 print -> screenshot
 ctrl+print -> color picker
 
+super+shift+w -> change wallpaper with kitty
 
 setting a theme: open ranger and press x on an image
 
