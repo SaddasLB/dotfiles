@@ -12,7 +12,7 @@ if status is-interactive
     alias grubdate='sudo mount /dev/nvme1n1p1 /mnt && sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
     ### Files Shortcuts ###
-    alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+    alias hyprconf='~/.config/scripts/hyprconf-selector.sh'
     alias aliases='nvim ~/.config/fish/config.fish'
     alias issues='nvim ~/Documents/issues.txt'
 

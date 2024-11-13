@@ -15,7 +15,7 @@ alias ll='ls -la --color=auto'
 alias grubdate='sudo mount /dev/nvme1n1p1 /mnt && sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 ### Files Shortcuts ###
-alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+alias hyprconf='nvim ~/.config/scripts/hyprconf-selector.sh'
 alias aliases='nvim ~/.bashrc'
 alias issues='nvim ~/Documents/issues.txt'
 

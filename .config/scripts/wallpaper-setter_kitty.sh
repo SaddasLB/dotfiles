@@ -99,7 +99,7 @@ list_wallpapers() {
             if [ $count -ge $start_idx ] && [ $displayed -lt $visible_items ]; then
                 goto_xy 1 $((list_start + displayed))
                 if [ "$count" -eq "$current_selection" ]; then
-                    echo -e "\e[1;33m>>> $count) $(basename "$img")\e[0m"
+                    echo -e "\e[1;33m $count) $(basename "$img")\e[0m"
                     show_image "$img"
                 else
                     echo "$count) $(basename "$img")"
