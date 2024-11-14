@@ -37,9 +37,14 @@ super+ctrl+m -> exit hyprland
 print -> screenshot
 ctrl+print -> color picker
 
-super+shift+w -> change wallpaper with kitty
+super+shift+w -> change theme with kitty
 
-setting a theme: open ranger and press x on an image
+setting a theme: 
+- open ranger and press x on an image
+- super+shift+w -> change theme with kitty
+- use script + image path
+
+to edit the hyprland conf files use the hyprconf alias
 
 packages: nano-syntax-highlighting hypridle hyprlock
 
