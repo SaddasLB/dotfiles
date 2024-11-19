@@ -8,6 +8,10 @@ if status is-interactive
     
     alias ll='ls -la'
 
+    # Power options
+    alias sdn='sudo shutdown now'
+    alias rbn='sudo reboot now'
+
     ### EFI Mount + Grub Update ###
     alias grubdate='sudo mount /dev/nvme1n1p1 /mnt && sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
