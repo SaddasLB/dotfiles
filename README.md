@@ -1,4 +1,8 @@
-hyprland: super -> open wofi 
+hyprland: 
+
+super -> open wofi 
+
+super + escape -> power menu
 
 super+c -> close selected window
 
