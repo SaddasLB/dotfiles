@@ -1,0 +1,38 @@
+@import ".cache/wal/colors-waybar.css";
+
+window {
+font-family: Noto Sans Mono;
+font-weight: bold;
+background-color: @background;
+opacity: 0.95;
+border-radius: 10;
+border: 2px solid @color1;
+color: @cursor;
+}
+
+
+#input{
+display: none;
+margin: -1000;
+border:0;
+opacity:0;
+}
+
+#inner-box{
+margin: 8;
+}
+
+#text{
+margin: 10;
+color: @color1;
+}
+
+#entry:selected{
+outline: none;
+background-color: @background;
+opacity: 1;
+}
+
+#entry:selected #text {
+color: @color6;
+}

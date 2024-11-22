@@ -17,7 +17,8 @@
 	"backlight",
 	"pulseaudio",
   "battery",
-	"clock"
+	"clock",
+  "custom/wofi-power"
     ],
 
     "hyprland/window": {
@@ -108,6 +109,12 @@
         "tooltip-format-disconnected": "Disconnected",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2
+    },
+
+    "custom/wofi-power": {
+      "format": "⏻",
+      "on-click": "~/.config/scripts/wofi-power-menu.sh", 
+      "tooltip": false
     }
 
 

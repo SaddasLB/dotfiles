@@ -1,0 +1,36 @@
+window {
+background-color: #1E1E2E;
+border-radius: 10;
+opacity: 1;
+color: white;
+}
+
+#input{
+background-color: #1E1E2E;
+
+
+
+border-color: rgba(33ccffee);
+border-color: rgba(33ccffee);
+border-color: rgba(33ccffee);
+border-color: rgba(33ccffee);
+
+border-color: rgba(33ccffee);
+Mmumuborder-radius: 10;
+color: white;
+}
+
+#inner-box{
+margin: 8;
+}
+
+#text{
+margin: 10;
+}
+
+#entry:selected{
+outline: none;
+background-color: #413746;
+border-radius: 10;
+opacity: 1;
+}
