@@ -9,10 +9,10 @@ if is_wofi_running; then
     exit 0
 fi
 
-entries="⏻ Shutdown\n⭮ Reboot\n⏾ Hibernate\n⇠ Logout"
+entries="⏻ Shutdown\n⭮ Reboot\n⏾ Hibernate\n⛒ Lock\n⇠ Logout"
 selected=$(echo -e $entries | wofi \
     --width 160 \
-    --height 210 \
+    --height 252 \
     --location=top_right \
     --xoffset=-8 \
     --yoffset=8 \
@@ -31,6 +31,9 @@ case $selected in
         ;;
     hibernate)
         systemctl hibernate
+        ;;
+    lock)
+        hyprlock
         ;;
     logout)
         hyprctl dispatch exit
