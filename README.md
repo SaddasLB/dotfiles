@@ -1,4 +1,4 @@
-# Hyprland Configuration Guide
+# Dotfiles Guide
 
 ## Editing Configuration
 Use the `hyprconf` alias to edit Hyprland configuration files.
