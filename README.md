@@ -41,7 +41,7 @@ Use the `hyprconf` alias to edit Hyprland configuration files.
 
 ## Theme Configuration (two options same result)
 
-1. Update theme via Terminal UI (kitty):
+1. Update theme via Terminal UI (kitty):       
      Super + Shift + W
 
 2. Set a wallpaper:
