@@ -3,6 +3,7 @@
 
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.bashrc
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/colors.css
+/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/fastfetch/config.jsonc
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/fish/config.fish
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/hypr/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/keepassxc/keepassxc.ini
