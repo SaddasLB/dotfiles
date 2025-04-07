@@ -86,3 +86,5 @@ xdg-settings set default-web-browser firefox.desktop
 if you don't use nvidia cards for hyprland comment the following vars inside hyprland.conf and edit gpu-selector.conf (hyprconf for both):
 env = LIBVA_DRIVER_NAME,nvidia
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+
+super + G = gamemode
