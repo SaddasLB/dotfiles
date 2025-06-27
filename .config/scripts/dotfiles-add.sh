@@ -16,5 +16,6 @@
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/wal/templates/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/waybar/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/wofi
+/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/.config/yt-dlp
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/Pictures/wallpapers/
 /usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME" add ~/README.md

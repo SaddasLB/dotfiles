@@ -1,0 +1,8 @@
+# Save all videos under ~/Videos/yt-dlp/
+-o ~/Videos/yt-dlp/%(title)s.%(ext)s
+
+# Embed subtitles inside the video
+--embed-subs 
+
+# Default subtitles language
+--sub-lang en
