@@ -32,6 +32,7 @@ if status is-interactive
     alias icat='kitty +kitten icat'
 
 
+    set -gx EDITOR nvim
 
     set -Ux RANGER_LOAD_DEFAULT_RC false
 

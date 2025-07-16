@@ -26,5 +26,7 @@ alias fetch='fastfetch'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/dotfiles/" --work-tree="$HOME"'
 alias dotadd='~/.config/scripts/dotfiles-add.sh'
 
+export EDITOR=nvim
+
 # set ranger to not use default config
 export RANGER_LOAD_DEFAULT_RC=false

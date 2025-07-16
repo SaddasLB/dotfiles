@@ -5,4 +5,4 @@
 --embed-subs 
 
 # Default subtitles language
---sub-lang en
+--sub-lang "en.*"
