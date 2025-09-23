@@ -37,3 +37,4 @@ if status is-interactive
     set -Ux RANGER_LOAD_DEFAULT_RC false
 
 end
+

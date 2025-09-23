@@ -1,4 +1,7 @@
 #!/bin/bash
+
+### USAGE: path-to-this-script path-to-appimage (ex. ~/.config/scripts/this-script ~/.appimages/that-appimage)
+
 set -e
 set -o pipefail
 
