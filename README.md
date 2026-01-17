@@ -35,7 +35,8 @@ Use the `hyprconf` alias to edit Hyprland configuration files.
 - **Super + E** - Open file manager
 
 ### Media Controls
-- **Print** - Take screenshot
+- **Print** - Take fullscreen screenshot
+- **Shift + Print** - Mouse selection screenshot
 - **Ctrl + Print** - Color picker
 - **Super + Shift + W** - Change theme with kitty
 

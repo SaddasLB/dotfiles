@@ -36,7 +36,7 @@ echo "IMAGE PATH: $input_path"
 
 #log_message "Converting path from absolute to relative"
 echo "...Converting path from absolute to relative..."
-selected_image="${input_path/$HOME/\$HOME}"
+selected_image="${input_path/$HOME/\~}"
 #log_message "Converted path: $selected_image"
 echo "CONVERTED PATH: $selected_image"
   
@@ -55,30 +55,10 @@ if [ ! -f "$(eval echo "$selected_image")" ]; then
   exit 1
 fi
 
-# Unload all wallpapers
-#log_message "Attempting to unload all wallpapers"
-echo -ne "\nAttempting to unload all wallpapers... "
-if hyprctl hyprpaper unload all; then
-    #log_message "Successfully unloaded all wallpapers"
-    echo ">> Wallpapers unloaded"
-else
-    #log_message "Failed to unload all wallpapers"
-    echo "ERROR: wallpapers unloading failed"
-fi
-
-# Update hyprpaper.conf
-#log_message "Attempting to update hyprpaper.conf preload"
-echo -n "Attempting to update hyprpaper.conf preload... "
-if sed -i "s|^preload = .*|preload = ${selected_image}|" "$config_file"; then
-    #log_message "Updated preload in hyprpaper.conf"
-    echo -e "ok\n>> hyprpaper.conf preload updated"
-else
-    #log_message "Failed to update preload in hyprpaper.conf"
-    echo "ERROR: hyprpaper.conf preload update failed"
-fi
-
+# update wallpaper path
 echo -n "Attempting to update hyprpaper.conf wallpaper... "
-if sed -i "s|^wallpaper = .*|wallpaper = , ${selected_image}|" "$config_file"; then
+
+if sed -i "s|^[[:space:]]*path[[:space:]]*=.*|  path = ${selected_image}|" "$config_file"; then
     #log_message "Updated wallpaper in hyprpaper.conf"
     echo -e "ok\n>> hyprpaper.conf wallpaper updated"
 else
@@ -86,21 +66,10 @@ else
     echo "ERROR: hyprpaper.conf wallpaper update failed" 
 fi
 
-# Preload new wallpaper
-#log_message "Attempting to preload new wallpaper"
-echo -n "Attempting to preload new wallpaper... "
-if hyprctl hyprpaper preload "$selected_image"; then
-    #log_message "Successfully preloaded new wallpaper"
-    echo ">> Wallpaper preloaded"
-else
-    #log_message "Failed to preload new wallpaper"
-    echo "ERROR: wallpaper preloading failed"
-fi
-
 # Set new wallpaper
 #log_message "Attempting to set new wallpaper"
 echo -n "Attempting to set new wallpaper... "
-if hyprctl hyprpaper wallpaper ",$selected_image"; then
+if hyprctl hyprpaper wallpaper ", $selected_image"; then
     #log_message "Successfully set new wallpaper"
     echo ">> Wallpaper setted" 
 else
