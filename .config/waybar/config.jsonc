@@ -38,7 +38,7 @@
     },
 
     "clock": {
-        "format": "{:%T}  ",
+        "format": "{:%T} \u23F1 ",
         "interval": 1,
         "rotate": 0,
         "tooltip-format": "<tt>{calendar}</tt>",
