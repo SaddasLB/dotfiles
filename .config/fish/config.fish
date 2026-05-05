@@ -6,7 +6,7 @@ if status is-interactive
 
     # Commands to run in interactive sessions can go here
     
-    alias ll='ls -la'
+    alias ll='ls -lah'
 
     # Power options
     alias sdn='sudo shutdown now'
