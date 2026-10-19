@@ -1,0 +1,9 @@
+--------------------
+--- GPU SELECTOR ---
+--------------------
+
+--Use integrated graphics as main on GS65 Stealth Thin 8RF
+--It could work on other devices but it needs testing
+--hl.env("AQ_DRM_DEVICES", "/dev/dri/card1:/dev/dri/card0")
+
+hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")

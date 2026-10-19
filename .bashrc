@@ -43,3 +43,5 @@ function y
 	end
 	rm -f -- "$tmp"
 end
+
+. "$HOME/.local/bin/env"
