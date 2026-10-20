@@ -89,10 +89,8 @@ for _, bind in ipairs({
     end
 end
 
--- ALT TAB between worksapaces ROTTO
--- hl.bind(mainMod .. " + TAB", hl.dsp.workspace("previous"))
--- binds{ allow_workspace_cycles = true}
-
+-- ALT TAB between worksapaces
+hl.bind(mainMod .. " + Tab", hl.dsp.focus({ workspace = "previous" }))
 
 -- ALT TAB between windows
 hl.bind("ALT + Tab", function()
